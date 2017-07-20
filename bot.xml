@@ -21,5 +21,7 @@
     <input pattern="(Estoy interesado |me gustaria| saber |como ser parte | pertenecer a ) *">
 
       <output value="claro que si $UserName, nosotros somos  etc ...."/>
+
+    </input>
       </context>
 </context>
