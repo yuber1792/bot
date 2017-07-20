@@ -12,16 +12,19 @@
                 <var name="UserName" value="$Text" scope="user"/>
                 <output value="como estas $UserName, en que puedo ayudarte ?"/> <!-- Using the placeholder in output -->
             </input>
+
+            <input pattern="(Estoy interesado |me gustaria| saber |como ser parte | pertenecer a ) *">
+
+              <output value="claro que si $UserName, nosotros somos  etc ...."/>
+
+            </input>
+            
         </context>
 
 
 
-    </input>
-  <context>
-    <input pattern="(Estoy interesado |me gustaria| saber |como ser parte | pertenecer a ) *">
 
-      <output value="claro que si $UserName, nosotros somos  etc ...."/>
 
     </input>
-      </context>
+
 </context>
