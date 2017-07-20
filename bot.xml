@@ -13,12 +13,27 @@
                 <output value="como estas $UserName, en que puedo ayudarte ?"/> <!-- Using the placeholder in output -->
             </input>
 
-            <input pattern="(Estoy interesado |me gustaria| saber |como ser parte | pertenecer a ) *">
+            <input pattern="(Estoy interesado |me gustaria| saber |como ser parte | pertenecer a )">
 
               <output value="claro que si $UserName, nosotros somos  etc ...."/>
 
             </input>
-            
+
+            <input pattern="(ok|hello) *">
+              <output value="y tu a que medio perteneces "/>
+
+              <context>
+                <sample>
+                  <item>Tatuador</item>
+                  <item>Proveedor</item>
+                  <item>Cliente</item>
+                </sample>
+                <input pattern="* $Color *">
+                  <output value="Nice! I like it too!"/>
+                </input>
+              </context>
+            </input>
+
         </context>
 
 
