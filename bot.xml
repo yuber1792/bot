@@ -19,20 +19,20 @@
 
             </input>
 
-            <input pattern="(ok|hello) *">
-              <output value="y tu a que medio perteneces "/>
+            <input pattern="(hi|hello) *">
+                <output value="Hi! What is your favorite color?"/>
 
-              <context>
-                <sample>
-                  <item>Tatuador</item>
-                  <item>Proveedor</item>
-                  <item>Cliente</item>
-                </sample>
-                <input pattern="$Color">
-                  <output value="Nice! I like it too!"/>
-                </input>
-              </context>
-            </input>
+                <context>
+                  <sample>
+                    <item>Green</item>
+                    <item>Blue</item>
+                    <item>Red</item>
+                  </sample>
+                  <input pattern="* $Color *">
+                    <output value="Nice! I like it too!"/>
+                  </input>
+                </context>
+              </input>
 
         </context>
 
